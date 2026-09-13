@@ -1,0 +1,28 @@
+/* FontAwesome Fallback - استخدام رموز Unicode بديلة */
+.fa-solid, .fa-brands, .fa-regular {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: inherit;
+}
+
+/* Credit Card Icons */
+.fa-credit-card::before { content: "💳"; }
+.fa-cc-visa::before { content: "💳"; color: #1434cb !important; }
+.fa-cc-mastercard::before { content: "💳"; color: #eb001b !important; }
+.fa-cc-apple-pay::before { content: "📱"; }
+
+/* Other Icons */
+.fa-language::before { content: "🌐"; }
+.fa-lock::before { content: "🔒"; }
+.fa-shield-alt::before { content: "🛡️"; }
+.fa-check::before { content: "✓"; }
+.fa-times::before { content: "✕"; }
+.fa-exclamation-triangle::before { content: "⚠️"; }
+
+/* Ensure proper display */
+.fa-solid, .fa-brands, .fa-regular {
+    min-width: 1em;
+    text-align: center;
+}
